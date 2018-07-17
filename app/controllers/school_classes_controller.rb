@@ -23,7 +23,7 @@ class SchoolClassesController < ApplicationController
 	end
 
 	def update
-	  @school_class = @school_class.find(params[:id])
+	  @school_class = SchoolClass.find(params[:id])
 	  @school_class.update(school_class_params(:title))
 	  redirect_to school_class_path(@school_class)
 	end
