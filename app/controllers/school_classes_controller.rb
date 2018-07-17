@@ -36,6 +36,6 @@ class SchoolClassesController < ApplicationController
 	# still allowing slightly different behavior
 	# depending on the controller action
 	def school_class_params(*args)
-	  params.require(:)permit(*args)
+	  params.require(:).permit(*args)
 	end
 end
